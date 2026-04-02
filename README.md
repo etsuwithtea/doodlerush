@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 DoodleRush
 
-## Getting Started
+**DoodleRush** เป็นเกมแนว 2D Infinite Runner/Platformer ที่สร้างขึ้นด้วยเทคโนโลยีเว็บสมัยใหม่ มาพร้อมกับดีไซน์สไตล์ Neo-brutalism ที่เน้นเส้นขอบหนาและสีสันที่สดใส
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react)](https://react.dev/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
+[![Zustand](https://img.shields.io/badge/Zustand-State_Management-orange?style=flat-square)](https://zustand-demo.pmnd.rs/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 ฟีเจอร์เด่น
+- **Infinite Gameplay**: ฉากที่ถูกสร้างแบบสุ่ม (Procedural Generation) ทำให้การเล่นแต่ละครั้งไม่ซ้ำกัน
+- **Dynamic Physics**: ระบบฟิสิกส์ที่ลื่นไหล รองรับการกระโดดสองชั้น (Double Jump)
+- **Session History**: บันทึกสถิติการเล่น ทั้งจำนวนดาวที่เก็บได้และเวลาที่ทำได้
+- **Responsive Design**: รองรับการเล่นทั้งบน Desktop และ Mobile พร้อมปุ่มควบคุมบนหน้าจอ
+- **Neo-brutalism UI**: ดีไซน์ที่โดดเด่น ทันสมัย และมีเอกลักษณ์
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎮 วิธีการเล่น (Controls)
+### Desktop
+- **เดินซ้าย/ขวา**: `A`, `D` หรือ `←`, `→`
+- **กระโดด**: `W`, `Space` หรือ `↑` (กดซ้ำเพื่อ Double Jump)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Mobile
+- ใช้ปุ่มควบคุมบนหน้าจอเพื่อเคลื่อนที่และกระโดด
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ เทคโนโลยีที่ใช้
+- **Core**: [Next.js 15](https://nextjs.org/) & [React 19](https://react.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Notifications**: [Sonner](https://sonner.stevenly.me/)
 
-## Learn More
+## 📦 การติดตั้งและเริ่มต้นใช้งาน
 
-To learn more about Next.js, take a look at the following resources:
+1. ติดตั้ง dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. รันโหมดการพัฒนา:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. เปิดเบราว์เซอร์ไปที่: [http://localhost:3000](http://localhost:3000)
 
-## Deploy on Vercel
+## 📁 โครงสร้างโปรเจกต์
+- `src/components/game`: คอมโพเนนต์หลักของเกมและระบบฟิสิกส์
+- `src/store`: การจัดการ State ด้วย Zustand (คะแนน, เวลา, ประวัติ)
+- `src/lib`: ฟังก์ชันช่วยเหลือและระบบฟิสิกส์พื้นฐาน
+- `src/app`: โครงสร้างหน้าเว็บหลักของ Next.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
+สร้างด้วย ❤️ โดย Antigravity
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
