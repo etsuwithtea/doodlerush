@@ -269,17 +269,17 @@ export default function GameCanvas() {
       <GameHUD />
       
       {/* Mobile Controls */}
-      <div className="absolute bottom-2 left-2 right-2 flex justify-between items-end lg:hidden pointer-events-none">
-        <div className="flex gap-2 pointer-events-auto items-center">
+      <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end lg:hidden pointer-events-none">
+        <div className="flex gap-4 pointer-events-auto items-center">
           <MobileButton 
-            className="w-10 h-10 text-base"
+            className="w-16 h-16 text-2xl"
             onPointerDown={() => keysPressed.current['arrowleft'] = true}
             onPointerUp={() => keysPressed.current['arrowleft'] = false}
           >
             ←
           </MobileButton>
           <MobileButton 
-            className="w-10 h-10 text-base"
+            className="w-16 h-16 text-2xl"
             onPointerDown={() => keysPressed.current['arrowright'] = true}
             onPointerUp={() => keysPressed.current['arrowright'] = false}
           >
@@ -290,7 +290,7 @@ export default function GameCanvas() {
         <div className="pointer-events-auto">
           <MobileButton 
             color="accent"
-            className="w-12 h-12 rounded-full text-sm"
+            className="w-20 h-20 rounded-full text-base"
             onPointerDown={() => { 
               const p = playerRef.current; 
               keysPressed.current['w'] = true;
